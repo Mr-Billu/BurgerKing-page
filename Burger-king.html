@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="Burger-King.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="logo">Burger King</div>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Menu</a>
+            <a href="#">Testimonials</a>
+            <a  href="#">Locations</a>
+        </div>
+        <button type="button" class="btns" id="order-btn">Order Now</button>
+        <button type="button"  class="btns" onclick="openLoginPopup()" id="login-btn">Login</button>
+    </nav>
+
+    <section class="Main-section">
+        <div class="text">
+            <h1>Flame-Grilled Burgers,<br>
+                Hot And Crispy Fries, <br> The King's Feast Awaits!</h1>
+            <p>Savor the bold, smoky flavor of flame-grilled burgers
+                <br> paired with perfect crispy fries. At Burger King,<br> every bite is made to satisfy your cravings <br>
+                with unbeatable taste and quality.</p>
+            <a id="link" class="btn-link" href="#">Order Now</a>
+        </div>
+        <div class="burger-image">
+            <img src="https://media.gettyimages.com/id/872841180/photo/tasty-hamburger-with-french-fries-on-wooden-table.jpg?s=612x612&w=0&k=20&c=DrJK_Uww2MUdd37_abiaXQyrKiUc0DG31BiclBaEJq4=" alt="Burger-King">
+        </div>
+    </section>
+
+    <div class="login-popup">
+        <form action="" id="login-page">
+            <h1 class="login-head">Login</h1>
+
+            <div class="login-elements">
+            <label for="email">Email</label>
+            <input type="email" name="email"  placeholder="Email" id="email">
+            </div>
+
+            <div class="login-elements">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <div class="login-elements">
+            <input type="checkbox" name="remember-me" id="remember">
+            <label for="remember" id="Rem">Remember</label>
+            </div>
+            
+            <div class="login-elements">
+                <button onclick="getLoginInfo()" type="button" id="login-page-btn">Login</button>
+                <button type="button" onclick="closeLoginPopup()" id="close-btn">❌</button>
+                <a id="forget-pass" href="#">Forget Password?</a>
+            </div>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
