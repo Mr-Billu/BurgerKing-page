@@ -317,9 +317,153 @@ left: 20px;
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 400px) {
     #login-page {
         width: 90%;
     }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #login-btn{
+        position: relative;
+        right: inherit;
+    }
+    #order-btn{
+        position: relative;
+        left: inherit;
+    }
+
+    .btns{
+        margin-bottom: 10px;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    .Main-section {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .text h1 {
+        font-size: 2em;
+        margin-top: -35px;
+    }
+
+    .text a{
+        margin-top: -20px;
+    }
+    .burger-image img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        margin: 5px 10px;
+    }
+
+    #logo{
+        font-size: 20px;
+    }
+
+    .btns {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    #login-btn{
+        margin-top: 10px;
+        position: relative;
+        right: inherit;
+    }
+    #order-btn{
+        left: inherit;
+        position: relative;    
+    }
+
+    .text h1{
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .text #link{
+        font-size: 20px;
+        margin-top: -15px;
+    }
+
+    .text #link::before{
+        position: absolute;
+    right: 133px;
+    }
+
+    .burger-image img {
+        width: 100%;
+        position: relative;
+        right: 50px;
+    }
+
+    .login-elements input {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 1024px){
+    .navbar{
+        font-size: 2em;
+
+    }
+    .btns{
+        padding: 10px 20px; 
+        font-size: 20px;
+        margin: 20px;
+    }
+    #logo{
+        font-size: 50px;
+    }
+
+    .Main-section{
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 1440px){
+    .navbar{
+        font-size: 1.5em;
+
+    }
+    .navbar a{
+        font-size: 20px;
+    }
+    #logo{
+        font-size: 30px;
+    }
+    .btns{
+        font-size: 12px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
 }
